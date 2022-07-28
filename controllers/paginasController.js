@@ -1,5 +1,5 @@
 import { Viajes } from "../models/Viaje.js";
-import { Testimonial } from "../models/testimoniales.js";
+import { Testimonial } from "../models/Testimoniales.js";
 
 
 
