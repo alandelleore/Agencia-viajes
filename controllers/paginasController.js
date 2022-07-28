@@ -1,5 +1,5 @@
 import { Viajes } from "../models/Viaje.js";
-//import { Testimonial } from "../models/Testimoniales.js";
+import { Testimonial } from "../models/Testimoniales.js";
 
 
 
@@ -10,7 +10,7 @@ const paginaInicio = async (req, res) => {         // req : Lo que enviamos,  re
     const promiseDB = [];
 
     promiseDB.push(Viajes.findAll({ limit: 3}));
-    //promiseDB.push(Testimonial.findAll({ limit: 3}));
+    promiseDB.push(Testimonial.findAll({ limit: 3}));
 
     try {
         const resultado = await Promise.all(promiseDB);
@@ -19,7 +19,7 @@ const paginaInicio = async (req, res) => {         // req : Lo que enviamos,  re
             pagina: 'Inicio',
             clase: 'home',
             viajes: resultado[0],
-            //testimoniales: resultado[1]
+            testimoniales: resultado[1]
         }); 
     } catch (error) {
         console.log(error)
