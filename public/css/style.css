@@ -6,12 +6,22 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+.menu {
+    display: none !important;
+}
+
+.logotipo {
+    width: 60%;
+    
+}
 h1, h2, h3 {
     font-family: 'Staatliches', cursive;
     color: #15B9D5;
 }
 h1 {
     font-size: 3.4rem;
+    margin-top: 100px !important;
 }
 h2 {
     font-size: 2.4rem;
@@ -41,8 +51,9 @@ h3 {
     align-items: center;
     justify-content: center;
     color: white;
+    
 }
-.slider h1 {
+.slider h2 {
     color: white;
 }
 .slider em {
@@ -117,6 +128,7 @@ footer .nav a,
             transparent 100%
         ), url(../img/cupon.jpg);
     }
+    
 }
 .descuento .contenido {
     display: flex;
@@ -165,4 +177,33 @@ i {
     color: #DC135F;
     font-weight: bold;
     margin-top: 1rem;
+}
+@media (max-width:780px) {
+    .menu {
+        display: block !important;
+        border-bottom: solid 1px rgba(109, 108, 108, 0.562);
+        
+    }
+    .navegacion {
+        display: none !important;
+    }
+
+   
+   
+
+    
+}
+
+@media (max-width:480px) {
+    .menu {
+        display: block !important;
+        border-bottom: solid 1px rgba(109, 108, 108, 0.562);
+        
+    }
+    .navegacion {
+        display: none !important;
+    }
+
+
+    
 }

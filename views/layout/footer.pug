@@ -1,11 +1,13 @@
-footer.container.py-5
-    .row
-        .col-md-6
-            nav.nav.footer.justify-content-center.justify-content-md-start
-                a.nav-link(href="/nosotros") Nosotros
-                a.nav-link(href="/viajes") Viajes
-                a.nav-link(href="/testimoniales") Testimoniales
-        .col
-            p.copyright.text-center.text-md-right
-                | Todos los derechos reservados 
-                span= actualYear
+footer.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    .container-fluid
+    
+      ul.navbar-nav
+        
+        li.nav-item
+          a.nav-link(aria-current='page' href='/') Home
+        li.nav-item
+          a.nav-link(href='/nosotros') Nosotros
+        li.nav-item
+          a.nav-link(href='/viajes') Viajes
+        li.nav-item
+          a.nav-link(href='/testimoniales') Testimoniales
