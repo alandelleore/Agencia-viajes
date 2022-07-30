@@ -11,10 +11,28 @@ body {
     display: none !important;
 }
 
-.logotipo {
-    width: 60%;
-    
+.textNab {
+    font-size: 14px;
 }
+
+.logotipo {
+    width: 60%;  
+}
+
+.logoInicio {
+    display: none;
+}
+
+.presentacion {
+    animation: fadeIn 4s ease;
+}
+
+@keyframes fadeIn {
+    0%{ 
+        opacity: 0;  
+    }
+} 
+
 h1, h2, h3 {
     font-family: 'Staatliches', cursive;
     color: #15B9D5;
@@ -188,9 +206,22 @@ i {
         display: none !important;
     }
 
-   
-   
+  
+    .logoInicio {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .logoInicio {
+        animation: fadeIn 4s ease;
+    }
+
+    @keyframes fadeIn {
+        0%{ 
+            opacity: 0;
+        }
+    }
     
 }
 
@@ -204,6 +235,19 @@ i {
         display: none !important;
     }
 
+    .logoInicio {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-    
+    .logoInicio {
+        animation: fadeIn 4s ease;
+    }
+
+    @keyframes fadeIn {
+        0%{ 
+            opacity: 0;  
+        }
+    } 
 }
