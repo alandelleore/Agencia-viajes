@@ -63,7 +63,7 @@ h3 {
     border-color: rgb(192, 7, 78);
 }
 .slider {
-    background: url(../img//superior.jpg);
+    background: url('https://firebasestorage.googleapis.com/v0/b/bluebird-2c2a8.appspot.com/o/superior.jpg?alt=media&token=eb87db87-eb2a-4958-9c6e-f41c5ded151b'); 
     min-height: 600px;
     height: 100vh;
     background-size: cover;
