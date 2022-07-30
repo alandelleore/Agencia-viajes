@@ -15,10 +15,11 @@ block contenido
         h2.text-center.mb-5 Sobre Nosotros
         .row.mb-5 
             .col-md-6 
-                p Day Tripper surge en el año 2008 tras el esfuerzo de un equipo de personas que en ese momento contaba con 25 años de experiencia en el rubro.Primero, hacer hincapié en una visión humana de cada viajero, con sencillez, sinceridad y transparencia; ya que sabemos lo divertido e importantes que son los viajes.Segundo, la búsqueda de innovación y el desarrollo tecnológico, con una visión joven y la intención de brindar información lo más clara posible; utilizando las herramientas que la nueva era nos proporciona.
+                p Moss Garden surge en el año 2003 tras el esfuerzo de un equipo de personas que en ese momento contaba con 25 años de experiencia en el rubro.Primero, hacer hincapié en una visión humana de cada viajero, con sencillez, sinceridad y transparencia; ya que sabemos lo divertido e importantes que son los viajes.Segundo, la búsqueda de innovación y el desarrollo tecnológico, con una visión joven y la intención de brindar información lo más clara posible; utilizando las herramientas que la nueva era nos proporciona.
                 
             .col-md-6
-                img(src="/img/inicio_nosotros.jpg", alt="img nosotros", class="img-fluid")
+                include ./layout/carousel
+                //img(src="/img/inicio_nosotros.jpg", alt="img nosotros", class="img-fluid")
         
         h2.text-center.mb-5 Viajes
         include ./layout/bloque_viajes 
@@ -32,8 +33,13 @@ block contenido
                         p.titulo Viaje a Canada
                         p.fecha 20 de Marzo de 2023 - 28 de Marzo de 2023
                         p.precio $2500 USD
+            .row
+                .container
+                img(src="/img/payment.jpg", alt="medios de pago", class="img-fluid")
+                           
     .container.mb-5
-        h2.mt-5.text-center Testimoniales
+        br
+        h2.text-center.testimonios Testimoniales
 
         include ./layout/bloque_testimoniales
 
